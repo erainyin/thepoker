@@ -28,6 +28,7 @@
   <link rel="stylesheet" href="/thepoker/css/style.css">
 </head>
 
+
 <body>
   <div id="container">
     <div id="wrap">
@@ -59,13 +60,16 @@
         
         <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
       </nav>
+      <form id="search-form">
+      </form>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://erainyin.github.io/thepoker"></form>
+        <input  type="text" name="q" id="tipue_search_input" autocomplete="off" required placeholder="搜索" style="width:80%;" />
       </div>
     </div>
   </div>
 </header>
       <div class="outer">
+        <div id="tipue_search_content" style="display: none"></div>
         <section id="main"><article id="post-e5-ad-a6-e4-b9-a0-e6-88-90-e6-9e-9c100221" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/thepoker/2010/02/21/e5-ad-a6-e4-b9-a0-e6-88-90-e6-9e-9c100221/" class="article-date">
@@ -100,7 +104,7 @@
       
     </div>
     <footer class="article-footer">
-      <!-- <a data-url="https://erainyin.github.io/thepoker/2010/02/21/e5-ad-a6-e4-b9-a0-e6-88-90-e6-9e-9c100221/" data-id="ck3goj0d101jun3b4brxm5huh" class="article-share-link">分享</a> -->
+      <!-- <a data-url="https://erainyin.github.io/thepoker/2010/02/21/e5-ad-a6-e4-b9-a0-e6-88-90-e6-9e-9c100221/" data-id="ck3gxxutm01jv4bb4e1mzc988" class="article-share-link">分享</a> -->
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/thepoker/tags/Design/" rel="tag">Design</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/thepoker/tags/Flash/" rel="tag">Flash</a></li></ul>
@@ -209,7 +213,10 @@
 </nav>
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
 
 
   <link rel="stylesheet" href="/thepoker/fancybox/jquery.fancybox.css">
@@ -220,6 +227,36 @@
 
 
 
+<link href="/thepoker/tipuesearch/tipuesearch.css" rel="stylesheet">
+<script src="/thepoker/tipuesearch/tipuesearch_set.js"></script>
+<script src="/thepoker/tipuesearch/tipuesearch.js"></script>
+<!-- Other code may be here -->
+<script>
+    $(document).ready(function () {
+ 
+        var searchInput = $('#tipue_search_input');
+        searchInput.tipuesearch({
+            'mode': 'json',
+            'minimumLength': 2,
+            'contentLocation': '/thepoker/tipuesearch/tipuesearch_content.json',
+            highlightEveryTerm: true
+        });
+ 
+        $('#search-form').on('submit', function (e) {
+            e.preventDefault();
+            $('#tipue_search_content').show();
+            $('#content').hide();
+        });
+ 
+        searchInput.keyup(function () {
+            var length = $(this).val().length;
+            if (length < 1) {
+                $('#tipue_search_content').hide();
+                $('#content').show();
+            }
+        });
+    });
+</script> 
   </div>
 </body>
 </html>

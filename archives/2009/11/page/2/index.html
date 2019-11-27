@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="/thepoker/css/style.css">
 </head>
 
+
 <body>
   <div id="container">
     <div id="wrap">
@@ -52,13 +53,16 @@
         
         <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
       </nav>
+      <form id="search-form">
+      </form>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://erainyin.github.io/thepoker"></form>
+        <input  type="text" name="q" id="tipue_search_input" autocomplete="off" required placeholder="搜索" style="width:80%;" />
       </div>
     </div>
   </div>
 </header>
       <div class="outer">
+        <div id="tipue_search_content" style="display: none"></div>
         <section id="main">
   
   
@@ -310,7 +314,10 @@
 </nav>
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
 
 
   <link rel="stylesheet" href="/thepoker/fancybox/jquery.fancybox.css">
@@ -321,6 +328,36 @@
 
 
 
+<link href="/thepoker/tipuesearch/tipuesearch.css" rel="stylesheet">
+<script src="/thepoker/tipuesearch/tipuesearch_set.js"></script>
+<script src="/thepoker/tipuesearch/tipuesearch.js"></script>
+<!-- Other code may be here -->
+<script>
+    $(document).ready(function () {
+ 
+        var searchInput = $('#tipue_search_input');
+        searchInput.tipuesearch({
+            'mode': 'json',
+            'minimumLength': 2,
+            'contentLocation': '/thepoker/tipuesearch/tipuesearch_content.json',
+            highlightEveryTerm: true
+        });
+ 
+        $('#search-form').on('submit', function (e) {
+            e.preventDefault();
+            $('#tipue_search_content').show();
+            $('#content').hide();
+        });
+ 
+        searchInput.keyup(function () {
+            var length = $(this).val().length;
+            if (length < 1) {
+                $('#tipue_search_content').hide();
+                $('#content').show();
+            }
+        });
+    });
+</script> 
   </div>
 </body>
 </html>
