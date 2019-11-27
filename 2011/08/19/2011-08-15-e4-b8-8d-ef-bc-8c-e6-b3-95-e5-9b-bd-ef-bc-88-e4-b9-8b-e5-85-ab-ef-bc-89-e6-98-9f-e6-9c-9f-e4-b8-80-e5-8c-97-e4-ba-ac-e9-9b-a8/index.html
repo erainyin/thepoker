@@ -59,13 +59,12 @@
       <form id="search-form">
       </form>
       <div id="search-form-wrap">
-        <input  type="text" name="q" id="tipue_search_input" autocomplete="off" required placeholder="搜索" style="width:80%;" />
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://erainyin.github.io/thepoker"></form>
       </div>
     </div>
   </div>
 </header>
       <div class="outer">
-        <div id="tipue_search_content" style="display: none"></div>
         <section id="main"><article id="post-2011-08-15-e4-b8-8d-ef-bc-8c-e6-b3-95-e5-9b-bd-ef-bc-88-e4-b9-8b-e5-85-ab-ef-bc-89-e6-98-9f-e6-9c-9f-e4-b8-80-e5-8c-97-e4-ba-ac-e9-9b-a8" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/thepoker/2011/08/19/2011-08-15-e4-b8-8d-ef-bc-8c-e6-b3-95-e5-9b-bd-ef-bc-88-e4-b9-8b-e5-85-ab-ef-bc-89-e6-98-9f-e6-9c-9f-e4-b8-80-e5-8c-97-e4-ba-ac-e9-9b-a8/" class="article-date">
@@ -97,7 +96,7 @@
       
     </div>
     <footer class="article-footer">
-      <!-- <a data-url="https://erainyin.github.io/thepoker/2011/08/19/2011-08-15-e4-b8-8d-ef-bc-8c-e6-b3-95-e5-9b-bd-ef-bc-88-e4-b9-8b-e5-85-ab-ef-bc-89-e6-98-9f-e6-9c-9f-e4-b8-80-e5-8c-97-e4-ba-ac-e9-9b-a8/" data-id="ck3gxxugu00wd4bb4dbkzc2lq" class="article-share-link">分享</a> -->
+      <!-- <a data-url="https://erainyin.github.io/thepoker/2011/08/19/2011-08-15-e4-b8-8d-ef-bc-8c-e6-b3-95-e5-9b-bd-ef-bc-88-e4-b9-8b-e5-85-ab-ef-bc-89-e6-98-9f-e6-9c-9f-e4-b8-80-e5-8c-97-e4-ba-ac-e9-9b-a8/" data-id="ck3gz0stc00wbicb45e8ja5gf" class="article-share-link">分享</a> -->
       
       
     </footer>
@@ -217,37 +216,6 @@
 <script src="/thepoker/js/script.js"></script>
 
 
-
-<link href="/thepoker/tipuesearch/tipuesearch.css" rel="stylesheet">
-<script src="/thepoker/tipuesearch/tipuesearch_set.js"></script>
-<script src="/thepoker/tipuesearch/tipuesearch.js"></script>
-<!-- Other code may be here -->
-<script>
-    $(document).ready(function () {
- 
-        var searchInput = $('#tipue_search_input');
-        searchInput.tipuesearch({
-            'mode': 'json',
-            'minimumLength': 2,
-            'contentLocation': '/thepoker/tipuesearch/tipuesearch_content.json',
-            highlightEveryTerm: true
-        });
- 
-        $('#search-form').on('submit', function (e) {
-            e.preventDefault();
-            $('#tipue_search_content').show();
-            $('#content').hide();
-        });
- 
-        searchInput.keyup(function () {
-            var length = $(this).val().length;
-            if (length < 1) {
-                $('#tipue_search_content').hide();
-                $('#content').show();
-            }
-        });
-    });
-</script> 
   </div>
 </body>
 </html>

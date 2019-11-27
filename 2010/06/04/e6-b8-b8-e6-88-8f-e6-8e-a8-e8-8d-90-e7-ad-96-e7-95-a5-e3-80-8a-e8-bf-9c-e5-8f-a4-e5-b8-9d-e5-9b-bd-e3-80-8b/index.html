@@ -62,13 +62,12 @@
       <form id="search-form">
       </form>
       <div id="search-form-wrap">
-        <input  type="text" name="q" id="tipue_search_input" autocomplete="off" required placeholder="搜索" style="width:80%;" />
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://erainyin.github.io/thepoker"></form>
       </div>
     </div>
   </div>
 </header>
       <div class="outer">
-        <div id="tipue_search_content" style="display: none"></div>
         <section id="main"><article id="post-e6-b8-b8-e6-88-8f-e6-8e-a8-e8-8d-90-e7-ad-96-e7-95-a5-e3-80-8a-e8-bf-9c-e5-8f-a4-e5-b8-9d-e5-9b-bd-e3-80-8b" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/thepoker/2010/06/04/e6-b8-b8-e6-88-8f-e6-8e-a8-e8-8d-90-e7-ad-96-e7-95-a5-e3-80-8a-e8-bf-9c-e5-8f-a4-e5-b8-9d-e5-9b-bd-e3-80-8b/" class="article-date">
@@ -114,7 +113,7 @@
       
     </div>
     <footer class="article-footer">
-      <!-- <a data-url="https://erainyin.github.io/thepoker/2010/06/04/e6-b8-b8-e6-88-8f-e6-8e-a8-e8-8d-90-e7-ad-96-e7-95-a5-e3-80-8a-e8-bf-9c-e5-8f-a4-e5-b8-9d-e5-9b-bd-e3-80-8b/" data-id="ck3gxxuvz01nv4bb4cl0qayka" class="article-share-link">分享</a> -->
+      <!-- <a data-url="https://erainyin.github.io/thepoker/2010/06/04/e6-b8-b8-e6-88-8f-e6-8e-a8-e8-8d-90-e7-ad-96-e7-95-a5-e3-80-8a-e8-bf-9c-e5-8f-a4-e5-b8-9d-e5-9b-bd-e3-80-8b/" data-id="ck3gz0tcs01nticb435h40fbf" class="article-share-link">分享</a> -->
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/thepoker/tags/%E6%B8%B8%E6%88%8F/" rel="tag">游戏</a></li></ul>
@@ -236,37 +235,6 @@
 <script src="/thepoker/js/script.js"></script>
 
 
-
-<link href="/thepoker/tipuesearch/tipuesearch.css" rel="stylesheet">
-<script src="/thepoker/tipuesearch/tipuesearch_set.js"></script>
-<script src="/thepoker/tipuesearch/tipuesearch.js"></script>
-<!-- Other code may be here -->
-<script>
-    $(document).ready(function () {
- 
-        var searchInput = $('#tipue_search_input');
-        searchInput.tipuesearch({
-            'mode': 'json',
-            'minimumLength': 2,
-            'contentLocation': '/thepoker/tipuesearch/tipuesearch_content.json',
-            highlightEveryTerm: true
-        });
- 
-        $('#search-form').on('submit', function (e) {
-            e.preventDefault();
-            $('#tipue_search_content').show();
-            $('#content').hide();
-        });
- 
-        searchInput.keyup(function () {
-            var length = $(this).val().length;
-            if (length < 1) {
-                $('#tipue_search_content').hide();
-                $('#content').show();
-            }
-        });
-    });
-</script> 
   </div>
 </body>
 </html>

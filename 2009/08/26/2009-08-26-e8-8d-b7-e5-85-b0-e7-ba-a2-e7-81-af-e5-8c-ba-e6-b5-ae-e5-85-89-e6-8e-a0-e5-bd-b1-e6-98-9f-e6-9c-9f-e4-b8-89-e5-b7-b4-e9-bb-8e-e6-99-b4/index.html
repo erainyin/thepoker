@@ -70,13 +70,12 @@
       <form id="search-form">
       </form>
       <div id="search-form-wrap">
-        <input  type="text" name="q" id="tipue_search_input" autocomplete="off" required placeholder="搜索" style="width:80%;" />
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://erainyin.github.io/thepoker"></form>
       </div>
     </div>
   </div>
 </header>
       <div class="outer">
-        <div id="tipue_search_content" style="display: none"></div>
         <section id="main"><article id="post-2009-08-26-e8-8d-b7-e5-85-b0-e7-ba-a2-e7-81-af-e5-8c-ba-e6-b5-ae-e5-85-89-e6-8e-a0-e5-bd-b1-e6-98-9f-e6-9c-9f-e4-b8-89-e5-b7-b4-e9-bb-8e-e6-99-b4" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/thepoker/2009/08/26/2009-08-26-e8-8d-b7-e5-85-b0-e7-ba-a2-e7-81-af-e5-8c-ba-e6-b5-ae-e5-85-89-e6-8e-a0-e5-bd-b1-e6-98-9f-e6-9c-9f-e4-b8-89-e5-b7-b4-e9-bb-8e-e6-99-b4/" class="article-date">
@@ -128,7 +127,7 @@
       
     </div>
     <footer class="article-footer">
-      <!-- <a data-url="https://erainyin.github.io/thepoker/2009/08/26/2009-08-26-e8-8d-b7-e5-85-b0-e7-ba-a2-e7-81-af-e5-8c-ba-e6-b5-ae-e5-85-89-e6-8e-a0-e5-bd-b1-e6-98-9f-e6-9c-9f-e4-b8-89-e5-b7-b4-e9-bb-8e-e6-99-b4/" data-id="ck3gxxu6h006j4bb45w8e5i5i" class="article-share-link">分享</a> -->
+      <!-- <a data-url="https://erainyin.github.io/thepoker/2009/08/26/2009-08-26-e8-8d-b7-e5-85-b0-e7-ba-a2-e7-81-af-e5-8c-ba-e6-b5-ae-e5-85-89-e6-8e-a0-e5-bd-b1-e6-98-9f-e6-9c-9f-e4-b8-89-e5-b7-b4-e9-bb-8e-e6-99-b4/" data-id="ck3gz0sil006jicb4gm9se0ly" class="article-share-link">分享</a> -->
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/thepoker/tags/%E8%A1%8C%E6%96%87%E6%B8%B8%E8%AE%B0/" rel="tag">行文游记</a></li></ul>
@@ -250,37 +249,6 @@
 <script src="/thepoker/js/script.js"></script>
 
 
-
-<link href="/thepoker/tipuesearch/tipuesearch.css" rel="stylesheet">
-<script src="/thepoker/tipuesearch/tipuesearch_set.js"></script>
-<script src="/thepoker/tipuesearch/tipuesearch.js"></script>
-<!-- Other code may be here -->
-<script>
-    $(document).ready(function () {
- 
-        var searchInput = $('#tipue_search_input');
-        searchInput.tipuesearch({
-            'mode': 'json',
-            'minimumLength': 2,
-            'contentLocation': '/thepoker/tipuesearch/tipuesearch_content.json',
-            highlightEveryTerm: true
-        });
- 
-        $('#search-form').on('submit', function (e) {
-            e.preventDefault();
-            $('#tipue_search_content').show();
-            $('#content').hide();
-        });
- 
-        searchInput.keyup(function () {
-            var length = $(this).val().length;
-            if (length < 1) {
-                $('#tipue_search_content').hide();
-                $('#content').show();
-            }
-        });
-    });
-</script> 
   </div>
 </body>
 </html>

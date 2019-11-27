@@ -67,13 +67,12 @@
       <form id="search-form">
       </form>
       <div id="search-form-wrap">
-        <input  type="text" name="q" id="tipue_search_input" autocomplete="off" required placeholder="搜索" style="width:80%;" />
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://erainyin.github.io/thepoker"></form>
       </div>
     </div>
   </div>
 </header>
       <div class="outer">
-        <div id="tipue_search_content" style="display: none"></div>
         <section id="main"><article id="post-2010-08-09-e5-b7-b4-e5-a1-9e-0-e5-85-ac-e9-87-8c-e6-98-9f-e6-9c-9f-e4-b8-80-e5-b7-b4-e5-a1-9e-e7-bd-97-e9-82-a3-e5-a4-9a-e4-ba-91" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/thepoker/2010/08/09/2010-08-09-e5-b7-b4-e5-a1-9e-0-e5-85-ac-e9-87-8c-e6-98-9f-e6-9c-9f-e4-b8-80-e5-b7-b4-e5-a1-9e-e7-bd-97-e9-82-a3-e5-a4-9a-e4-ba-91/" class="article-date">
@@ -128,7 +127,7 @@
       
     </div>
     <footer class="article-footer">
-      <!-- <a data-url="https://erainyin.github.io/thepoker/2010/08/09/2010-08-09-e5-b7-b4-e5-a1-9e-0-e5-85-ac-e9-87-8c-e6-98-9f-e6-9c-9f-e4-b8-80-e5-b7-b4-e5-a1-9e-e7-bd-97-e9-82-a3-e5-a4-9a-e4-ba-91/" data-id="ck3gxxudh00od4bb402glh54q" class="article-share-link">分享</a> -->
+      <!-- <a data-url="https://erainyin.github.io/thepoker/2010/08/09/2010-08-09-e5-b7-b4-e5-a1-9e-0-e5-85-ac-e9-87-8c-e6-98-9f-e6-9c-9f-e4-b8-80-e5-b7-b4-e5-a1-9e-e7-bd-97-e9-82-a3-e5-a4-9a-e4-ba-91/" data-id="ck3gz0spp00obicb4ck6fcuse" class="article-share-link">分享</a> -->
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/thepoker/tags/%E5%8D%97%E6%96%B9/" rel="tag">南方</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/thepoker/tags/%E5%B7%B4%E5%A1%9E%E7%BD%97%E9%82%A3/" rel="tag">巴塞罗那</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/thepoker/tags/%E6%97%85%E8%A1%8C/" rel="tag">旅行</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/thepoker/tags/%E7%94%9F%E6%B4%BB/" rel="tag">生活</a></li></ul>
@@ -250,37 +249,6 @@
 <script src="/thepoker/js/script.js"></script>
 
 
-
-<link href="/thepoker/tipuesearch/tipuesearch.css" rel="stylesheet">
-<script src="/thepoker/tipuesearch/tipuesearch_set.js"></script>
-<script src="/thepoker/tipuesearch/tipuesearch.js"></script>
-<!-- Other code may be here -->
-<script>
-    $(document).ready(function () {
- 
-        var searchInput = $('#tipue_search_input');
-        searchInput.tipuesearch({
-            'mode': 'json',
-            'minimumLength': 2,
-            'contentLocation': '/thepoker/tipuesearch/tipuesearch_content.json',
-            highlightEveryTerm: true
-        });
- 
-        $('#search-form').on('submit', function (e) {
-            e.preventDefault();
-            $('#tipue_search_content').show();
-            $('#content').hide();
-        });
- 
-        searchInput.keyup(function () {
-            var length = $(this).val().length;
-            if (length < 1) {
-                $('#tipue_search_content').hide();
-                $('#content').show();
-            }
-        });
-    });
-</script> 
   </div>
 </body>
 </html>
