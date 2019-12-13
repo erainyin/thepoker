@@ -229,10 +229,11 @@ hr {
   margin: 40px 0;
 }
 blockquote {
-  border-left: 4px solid #ddd;
+  border-bottom: 3px solid #ddd;
   color: #666;
-  margin: 0;
-  padding: 0 15px;
+  margin: 0 0 20px 0;
+  padding: 5px 15px 5px 25px;
+  background: #fafafa;
 }
 blockquote cite::before {
   content: '-';
@@ -1154,7 +1155,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #3b2a95;
+  background: #bba47a;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1396,7 +1397,7 @@ pre .javascript .function {
   }
 }
 .with-love {
-  color: #808080;
+  color: #c00;
   display: inline-block;
   margin: 0 5px;
 }
@@ -1512,9 +1513,9 @@ pre .javascript .function {
 .post-body .figure .caption {
   color: #999;
   font-size: 0.875em;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 1;
-  margin: -20px auto 15px;
+  margin: -10px auto 15px;
   text-align: center;
 }
 .post-sticky-flag {
