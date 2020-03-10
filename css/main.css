@@ -231,7 +231,7 @@ hr {
 blockquote {
   border-left: 3px solid #ddd;
   color: #666;
-  margin: 0;
+  margin: 0 0 20px 0;
   padding: 10px 15px 10px 25px;
   background: #fafafa;
 }
@@ -1158,7 +1158,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #9955a8;
+  background: #ecffff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
