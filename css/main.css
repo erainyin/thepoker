@@ -229,11 +229,11 @@ hr {
   margin: 40px 0;
 }
 blockquote {
-  border-left: 3px solid #ddd;
+  border-left: 2px solid #ddd;
   color: #666;
   margin: 0 0 20px 0;
-  padding: 10px 15px 10px 25px;
-  background: #fafafa;
+  padding: 5px 15px;
+  background: #fff;
 }
 blockquote cite::before {
   content: '-';
@@ -241,6 +241,9 @@ blockquote cite::before {
 }
 blockquote p {
   margin-bottom: 0;
+  font-size: 14px;
+  line-heitht: 24px;
+  color: #888;
 }
 dt {
   font-weight: 700;
@@ -1158,7 +1161,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #7e5cf5;
+  background: #c32538;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
