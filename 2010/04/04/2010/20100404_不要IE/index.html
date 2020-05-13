@@ -48,7 +48,7 @@
 </script>
 
   <meta name="description" content="今天做了一个小图片，放到了aWeek的首页，用于提醒还在使用IE，尤其是IE6的浏览者更换浏览器。 点击这里看效果，不过前提是使用IE浏览器。">
-<meta name="keywords" content="工作,Design">
+<meta name="keywords" content="Design,工作">
 <meta property="og:type" content="article">
 <meta property="og:title" content="不要IE">
 <meta property="og:url" content="https:&#x2F;&#x2F;erainyin.github.io&#x2F;thepoker&#x2F;2010&#x2F;04&#x2F;04&#x2F;2010&#x2F;20100404_%E4%B8%8D%E8%A6%81IE&#x2F;index.html">
@@ -252,6 +252,20 @@
             </span>
 
           
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/thepoker/2010/04/04/2010/20100404_%E4%B8%8D%E8%A6%81IE/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/thepoker/2010/04/04/2010/20100404_%E4%B8%8D%E8%A6%81IE/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
 
         </div>
       </header>
@@ -274,8 +288,8 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/thepoker/tags/%E5%B7%A5%E4%BD%9C/" rel="tag"># 工作</a>
               <a href="/thepoker/tags/Design/" rel="tag"># Design</a>
+              <a href="/thepoker/tags/%E5%B7%A5%E4%BD%9C/" rel="tag"># 工作</a>
           </div>
 
         
@@ -304,6 +318,7 @@
 
           </div>
           
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -454,6 +469,35 @@
   
 
   
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = '昵称,邮箱,链接';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el: '#valine-comments',
+      verify: false,
+      notify: true,
+      appId: 'wBfHg9GqghcueVumcRGTyk2s-gzGzoHsz',
+      appKey: '29fydbhSQ8Ymetsh8QPenBhE',
+      placeholder: "say what you wanna say",
+      avatar: 'mm',
+      meta: guest,
+      pageSize: '10' || 10,
+      visitor: false,
+      lang: 'zh-Hans' || 'zh-cn',
+      path: location.pathname,
+      recordIP: true,
+      serverURLs: ''
+    });
+  }, window.Valine);
+});
+</script>
 
 </body>
 </html>

@@ -48,7 +48,7 @@
 </script>
 
   <meta name="description" content="a *GOOD* good morning">
-<meta name="keywords" content="摄影,北京,户外,图片,阳光">
+<meta name="keywords" content="北京,摄影,户外,图片,阳光">
 <meta property="og:type" content="article">
 <meta property="og:title" content="摄影140304 &#x2F; 早安北京">
 <meta property="og:url" content="https:&#x2F;&#x2F;erainyin.github.io&#x2F;thepoker&#x2F;2014&#x2F;03&#x2F;04&#x2F;2014&#x2F;20140304_%E6%91%84%E5%BD%B1-%E6%97%A9%E5%AE%89%E5%8C%97%E4%BA%AC&#x2F;index.html">
@@ -252,6 +252,20 @@
             </span>
 
           
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/thepoker/2014/03/04/2014/20140304_%E6%91%84%E5%BD%B1-%E6%97%A9%E5%AE%89%E5%8C%97%E4%BA%AC/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/thepoker/2014/03/04/2014/20140304_%E6%91%84%E5%BD%B1-%E6%97%A9%E5%AE%89%E5%8C%97%E4%BA%AC/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
 
         </div>
       </header>
@@ -273,8 +287,8 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/thepoker/tags/%E6%91%84%E5%BD%B1/" rel="tag"># 摄影</a>
               <a href="/thepoker/tags/%E5%8C%97%E4%BA%AC/" rel="tag"># 北京</a>
+              <a href="/thepoker/tags/%E6%91%84%E5%BD%B1/" rel="tag"># 摄影</a>
               <a href="/thepoker/tags/%E6%88%B7%E5%A4%96/" rel="tag"># 户外</a>
               <a href="/thepoker/tags/%E5%9B%BE%E7%89%87/" rel="tag"># 图片</a>
               <a href="/thepoker/tags/%E9%98%B3%E5%85%89/" rel="tag"># 阳光</a>
@@ -306,6 +320,7 @@
 
           </div>
           
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -456,6 +471,35 @@
   
 
   
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = '昵称,邮箱,链接';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el: '#valine-comments',
+      verify: false,
+      notify: true,
+      appId: 'wBfHg9GqghcueVumcRGTyk2s-gzGzoHsz',
+      appKey: '29fydbhSQ8Ymetsh8QPenBhE',
+      placeholder: "say what you wanna say",
+      avatar: 'mm',
+      meta: guest,
+      pageSize: '10' || 10,
+      visitor: false,
+      lang: 'zh-Hans' || 'zh-cn',
+      path: location.pathname,
+      recordIP: true,
+      serverURLs: ''
+    });
+  }, window.Valine);
+});
+</script>
 
 </body>
 </html>

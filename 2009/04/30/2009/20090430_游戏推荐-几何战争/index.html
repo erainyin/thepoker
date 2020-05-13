@@ -257,6 +257,20 @@
             </span>
 
           
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/thepoker/2009/04/30/2009/20090430_%E6%B8%B8%E6%88%8F%E6%8E%A8%E8%8D%90-%E5%87%A0%E4%BD%95%E6%88%98%E4%BA%89/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/thepoker/2009/04/30/2009/20090430_%E6%B8%B8%E6%88%8F%E6%8E%A8%E8%8D%90-%E5%87%A0%E4%BD%95%E6%88%98%E4%BA%89/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
 
         </div>
       </header>
@@ -309,6 +323,7 @@
 
           </div>
           
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -459,6 +474,35 @@
   
 
   
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = '昵称,邮箱,链接';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el: '#valine-comments',
+      verify: false,
+      notify: true,
+      appId: 'wBfHg9GqghcueVumcRGTyk2s-gzGzoHsz',
+      appKey: '29fydbhSQ8Ymetsh8QPenBhE',
+      placeholder: "say what you wanna say",
+      avatar: 'mm',
+      meta: guest,
+      pageSize: '10' || 10,
+      visitor: false,
+      lang: 'zh-Hans' || 'zh-cn',
+      path: location.pathname,
+      recordIP: true,
+      serverURLs: ''
+    });
+  }, window.Valine);
+});
+</script>
 
 </body>
 </html>

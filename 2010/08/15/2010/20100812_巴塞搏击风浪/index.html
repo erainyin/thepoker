@@ -47,7 +47,7 @@
   };
 </script>
 
-  <meta name="keywords" content="生活,南方,旅行,巴塞罗那">
+  <meta name="keywords" content="生活,旅行,南方,巴塞罗那">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2010-08-12 巴塞-搏击风浪，嗨！ [星期四 巴塞罗那 晴转雨]">
 <meta property="og:url" content="https:&#x2F;&#x2F;erainyin.github.io&#x2F;thepoker&#x2F;2010&#x2F;08&#x2F;15&#x2F;2010&#x2F;20100812_%E5%B7%B4%E5%A1%9E%E6%90%8F%E5%87%BB%E9%A3%8E%E6%B5%AA&#x2F;index.html">
@@ -250,6 +250,20 @@
             </span>
 
           
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/thepoker/2010/08/15/2010/20100812_%E5%B7%B4%E5%A1%9E%E6%90%8F%E5%87%BB%E9%A3%8E%E6%B5%AA/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/thepoker/2010/08/15/2010/20100812_%E5%B7%B4%E5%A1%9E%E6%90%8F%E5%87%BB%E9%A3%8E%E6%B5%AA/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
 
         </div>
       </header>
@@ -271,8 +285,8 @@
       <footer class="post-footer">
           <div class="post-tags">
               <a href="/thepoker/tags/%E7%94%9F%E6%B4%BB/" rel="tag"># 生活</a>
-              <a href="/thepoker/tags/%E5%8D%97%E6%96%B9/" rel="tag"># 南方</a>
               <a href="/thepoker/tags/%E6%97%85%E8%A1%8C/" rel="tag"># 旅行</a>
+              <a href="/thepoker/tags/%E5%8D%97%E6%96%B9/" rel="tag"># 南方</a>
               <a href="/thepoker/tags/%E5%B7%B4%E5%A1%9E%E7%BD%97%E9%82%A3/" rel="tag"># 巴塞罗那</a>
           </div>
 
@@ -302,6 +316,7 @@
 
           </div>
           
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -452,6 +467,35 @@
   
 
   
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = '昵称,邮箱,链接';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el: '#valine-comments',
+      verify: false,
+      notify: true,
+      appId: 'wBfHg9GqghcueVumcRGTyk2s-gzGzoHsz',
+      appKey: '29fydbhSQ8Ymetsh8QPenBhE',
+      placeholder: "say what you wanna say",
+      avatar: 'mm',
+      meta: guest,
+      pageSize: '10' || 10,
+      visitor: false,
+      lang: 'zh-Hans' || 'zh-cn',
+      path: location.pathname,
+      recordIP: true,
+      serverURLs: ''
+    });
+  }, window.Valine);
+});
+</script>
 
 </body>
 </html>
