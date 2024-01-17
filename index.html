@@ -1,0 +1,1872 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/thepoker/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/thepoker/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/thepoker/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/thepoker/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/thepoker/css/main.css">
+
+
+<link rel="stylesheet" href="/thepoker/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('https://erainyin.github.io/thepoker').hostname,
+    root: '/thepoker/',
+    scheme: 'Mist',
+    version: '7.6.0',
+    exturl: false,
+    sidebar: {"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: true,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="thePoker">
+<meta property="og:url" content="https:&#x2F;&#x2F;erainyin.github.io&#x2F;thepoker&#x2F;index.html">
+<meta property="og:site_name" content="thePoker">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://erainyin.github.io/thepoker/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: true,
+    isPost: false
+  };
+</script>
+
+  <title>thePoker</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/thepoker/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">thePoker</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">blog of erain</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/thepoker/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/thepoker/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/thepoker/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/thepoker/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://erainyin.github.io/thepoker/2023/12/19/2023/20231219_%E8%AE%B0%E8%AE%B0%E8%B4%A6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/thepoker/images/avatar.gif">
+      <meta itemprop="name" content="erain yin">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="thePoker">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/thepoker/2023/12/19/2023/20231219_%E8%AE%B0%E8%AE%B0%E8%B4%A6/" class="post-title-link" itemprop="url">记记账</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-12-19 23:09:04" itemprop="dateCreated datePublished" datetime="2023-12-19T23:09:04+08:00">2023-12-19</time>
+            </span>
+              <span class="post-meta-item" style="display:none;">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-12-20 09:46:55" itemprop="dateModified" datetime="2023-12-20T09:46:55+08:00">2023-12-20</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/thepoker/categories/%E7%BA%A2%E6%A1%83-%E6%96%87%E7%AB%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">红桃 - 文章</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>年底除了总结就喜欢记记账，尤其在今年。今年的年底给人一种焦灼的感觉，如泥潭跋涉，每一步每一天都不那么痛快。</p>
+<ol>
+<li><p>为自己的域名续费，129元/年。不为别的，就为在这个移动互联网时代给自己在传统互联网上留一块自留地。就像无论在什么年代，我们都有一个拥有一个院落的梦想。从原始社会到赛博时代，古今无不同。</p>
+</li>
+<li><p>给自己和父母买了医疗保险。正所谓未雨绸缪，或者买个心安。北京普惠健康宝，好就好在没有年龄限制，也不用体检。没想到，今年还能直接用医保买了。159元/人。</p>
+</li>
+<li><p>故宫年票。300元/人。经过一年的体验，故宫年票最大的好处就是只要你想去，就肯定能约上。300元十次，平均下来30元/次并没有便宜多少，但看到今年夏天故宫的火爆程度就知道人家卖的不是票面价值，卖的是包您成行的体验。“哎呀故宫明天已经约满了，哎？我约上了啊，哦对了，我是年票用户。”（哎呦，有装到😂）故宫年票用户有专门的预约通道，而且孩子还不要钱，太适合我们这种家庭了。</p>
+</li>
+<li><p>《万物》杂志300元/年。这个杂志已经定了3年了。正所谓再穷不能穷教育，再苦不能苦孩子。</p>
+</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://erainyin.github.io/thepoker/2023/12/14/2023/20231214_%E9%9A%8F%E7%AC%94/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/thepoker/images/avatar.gif">
+      <meta itemprop="name" content="erain yin">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="thePoker">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/thepoker/2023/12/14/2023/20231214_%E9%9A%8F%E7%AC%94/" class="post-title-link" itemprop="url">随笔</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-12-14 23:09:04 / 修改时间：21:43:50" itemprop="dateCreated datePublished" datetime="2023-12-14T23:09:04+08:00">2023-12-14</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/thepoker/categories/%E7%BA%A2%E6%A1%83-%E6%96%87%E7%AB%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">红桃 - 文章</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>在这个时代有什么比读一首诗更不具功利性的事呢？还是一首20年前的诗。还是一首自己写的诗。</p>
+<p>这是一段穿越时空的文字，如果有人问这首诗的灵感来源，其实我早有准备。因为我时长回想到那个场景：那是20年前的一天，我走在天坛公园的小路上。</p>
+<p>印象中应该是在丹陛桥的西侧。上午还是下午有些记不清了，总之天气很好，阳光也很好。灰色的墙边是大片的绿地，从成片的松柏均匀分布的样子就知道这片树林绝非自然生长，他们种植在这个园林里的时候就被赋予了意义。他们和这片土地的主人一样受到尊敬，享受土地和自然的滋养，也绝不会有人故意伤害他们。只需在特定的时间贡献出一些枝条，让帝国的皇帝在燃烧枝条产生的烟雾中祈求上天的怜悯，赐予他和他的帝国下一年的风调雨顺。而至于帝国的命运到底如何，树木无需关心，也不必负责。</p>
+<p>人们精心呵护这些树木。让他们在几百年后长得异常挺拔。张开巨大的枝丫，形成巨大的树荫。几百年后，在严格规划的步道上，人们对这些树木仰望并赞叹。我也是那些游客其中之一。每隔一段时间，草丛中便会喷出水来，水量充足且稳定。而那个下午的阳光穿过枝叶和空气，穿透水帘。我一定是被水光反射的彩虹吸引，站在了那里，愣了很长一段时间神。一个问题忽然闪过我的脑海：那么多的水，浇在它们的身上，究竟是为了什么？</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://erainyin.github.io/thepoker/2023/12/12/2023/20231212-%E6%83%8A%E5%96%9C/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/thepoker/images/avatar.gif">
+      <meta itemprop="name" content="erain yin">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="thePoker">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/thepoker/2023/12/12/2023/20231212-%E6%83%8A%E5%96%9C/" class="post-title-link" itemprop="url">惊喜</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-12-12 23:00:32 / 修改时间：18:08:48" itemprop="dateCreated datePublished" datetime="2023-12-12T23:00:32+08:00">2023-12-12</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/thepoker/categories/%E7%BA%A2%E6%A1%83-%E6%96%87%E7%AB%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">红桃 - 文章</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>from 故事FM！</p>
+<p>《树》<br>那么多的水<br>浇在我的身上<br>只是为了<br>当文明变成废墟以后<br>我还在这里<br>以及保证<br>另一些要砍伐我的人<br>他们能得到<br>我的躯干<br>和那么多<br>关于先人的遗憾</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://erainyin.github.io/thepoker/2023/12/09/2023/20231209-%E7%BB%9F%E8%AE%A1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/thepoker/images/avatar.gif">
+      <meta itemprop="name" content="erain yin">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="thePoker">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/thepoker/2023/12/09/2023/20231209-%E7%BB%9F%E8%AE%A1/" class="post-title-link" itemprop="url">一个统计</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-12-09 23:00:32" itemprop="dateCreated datePublished" datetime="2023-12-09T23:00:32+08:00">2023-12-09</time>
+            </span>
+              <span class="post-meta-item" style="display:none;">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-12-14 22:50:16" itemprop="dateModified" datetime="2023-12-14T22:50:16+08:00">2023-12-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/thepoker/categories/%E7%BA%A2%E6%A1%83-%E6%96%87%E7%AB%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">红桃 - 文章</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="一个统计2022"><a href="#一个统计2022" class="headerlink" title="一个统计2022"></a>一个统计2022</h3><table>
+<thead>
+<tr>
+<th>日期</th>
+<th>周</th>
+<th>目的地</th>
+<th>朋友</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2023/1/1</td>
+<td>日</td>
+<td>石景山游乐园</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/1/2</td>
+<td>一</td>
+<td>天坛</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/1/7</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/1/8</td>
+<td>日</td>
+<td>植物园</td>
+<td>班班</td>
+</tr>
+<tr>
+<td>2023/1/14</td>
+<td>六</td>
+<td>云南-西双版纳</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/1/15</td>
+<td>日</td>
+<td>云南-西双版纳</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/1/16</td>
+<td>一</td>
+<td>云南-西双版纳</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/1/17</td>
+<td>二</td>
+<td>云南-西双版纳</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/1/18</td>
+<td>三</td>
+<td>云南-西双版纳</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/1/19</td>
+<td>四</td>
+<td>云南-西双版纳</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/1/20</td>
+<td>五</td>
+<td>云南-西双版纳</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/1/21</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/1/22</td>
+<td>日</td>
+<td>故宫</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/1/28</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/1/29</td>
+<td>日</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/2/4</td>
+<td>六</td>
+<td>植物园</td>
+<td>天宝</td>
+</tr>
+<tr>
+<td>2023/2/5</td>
+<td>日</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/2/11</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/2/12</td>
+<td>日</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/2/18</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/2/19</td>
+<td>日</td>
+<td>颐和园</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/2/25</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/2/26</td>
+<td>日</td>
+<td>卢沟桥</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/3/4</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/3/5</td>
+<td>日</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/3/11</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/3/12</td>
+<td>日</td>
+<td>香山野山</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/3/18</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/3/19</td>
+<td>日</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/3/25</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/3/26</td>
+<td>日</td>
+<td>大觉寺</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/4/1</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/4/2</td>
+<td>日</td>
+<td>颐和园</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/4/8</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/4/9</td>
+<td>日</td>
+<td>等级赛</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/4/15</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/4/16</td>
+<td>日</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/4/22</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/4/23</td>
+<td>日</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/4/29</td>
+<td>六</td>
+<td>雕塑公园</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/4/30</td>
+<td>日</td>
+<td>香山野山</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/5/1</td>
+<td>一</td>
+<td>中华民族园</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/5/2</td>
+<td>二</td>
+<td>大觉寺</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/5/6</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/5/7</td>
+<td>日</td>
+<td>潭王路Tanko</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/5/13</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/5/14</td>
+<td>日</td>
+<td>大觉寺</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/5/20</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/5/21</td>
+<td>日</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/5/27</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/5/28</td>
+<td>日</td>
+<td>京西古道（王平段）</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/6/3</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/6/4</td>
+<td>日</td>
+<td>故宫</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/6/10</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/6/11</td>
+<td>日</td>
+<td>桑峪村</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/6/17</td>
+<td>六</td>
+<td>公开赛</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/6/18</td>
+<td>日</td>
+<td>清华大学</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/6/24</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/6/25</td>
+<td>日</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/7/1</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/7/2</td>
+<td>日</td>
+<td>大觉寺</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/7/7</td>
+<td>五</td>
+<td>环球度假区</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/7/8</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/7/9</td>
+<td>日</td>
+<td>园博园捕鱼</td>
+<td>班班、冯家月、左右</td>
+</tr>
+<tr>
+<td>2023/7/15</td>
+<td>六</td>
+<td>园博园捕鱼</td>
+<td>冯家月</td>
+</tr>
+<tr>
+<td>2023/7/16</td>
+<td>日</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/7/22</td>
+<td>六</td>
+<td>水立方</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/7/23</td>
+<td>日</td>
+<td>园博园捕鱼</td>
+<td>左右</td>
+</tr>
+<tr>
+<td>2023/7/29</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/7/30</td>
+<td>日</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/8/5</td>
+<td>六</td>
+<td>中华民族园</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/8/6</td>
+<td>日</td>
+<td>园博园捕鱼</td>
+<td>班班</td>
+</tr>
+<tr>
+<td>2023/8/12</td>
+<td>六</td>
+<td>园博园捕鱼</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/8/13</td>
+<td>日</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/8/19</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/8/20</td>
+<td>日</td>
+<td>市赛</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/8/26</td>
+<td>六</td>
+<td>天津</td>
+<td>天宝</td>
+</tr>
+<tr>
+<td>2023/8/27</td>
+<td>日</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/9/2</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/9/3</td>
+<td>日</td>
+<td>香山野山</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/9/9</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/9/10</td>
+<td>日</td>
+<td>植物园</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/9/16</td>
+<td>六</td>
+<td>市赛</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/9/17</td>
+<td>日</td>
+<td>市赛</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/9/23</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/9/24</td>
+<td>日</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/9/30</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/10/1</td>
+<td>日</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/10/2</td>
+<td>一</td>
+<td>美术馆</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/10/3</td>
+<td>二</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/10/4</td>
+<td>三</td>
+<td>天坛</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/10/5</td>
+<td>四</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/10/6</td>
+<td>五</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/10/7</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/10/8</td>
+<td>日</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/10/14</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/10/15</td>
+<td>日</td>
+<td>故宫</td>
+<td>老余</td>
+</tr>
+<tr>
+<td>2023/10/21</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/10/22</td>
+<td>日</td>
+<td>大觉寺</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/10/28</td>
+<td>六</td>
+<td>公开赛</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/10/29</td>
+<td>日</td>
+<td>园博园</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/11/4</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/11/5</td>
+<td>日</td>
+<td>老李生日宴</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/11/11</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/11/12</td>
+<td>日</td>
+<td>市赛</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/11/18</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/11/19</td>
+<td>日</td>
+<td>植物园</td>
+<td>二毛、余氏兄弟</td>
+</tr>
+<tr>
+<td>2023/11/25</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/11/26</td>
+<td>日</td>
+<td>农业大学</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/12/2</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/12/3</td>
+<td>日</td>
+<td>植物园</td>
+<td>马氏兄弟、老余、二毛、老李</td>
+</tr>
+<tr>
+<td>2023/12/9</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/12/10</td>
+<td>日</td>
+<td>公开赛</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/12/16</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/12/17</td>
+<td>日</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/12/23</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/12/24</td>
+<td>日</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/12/30</td>
+<td>六</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/12/31</td>
+<td>日</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://erainyin.github.io/thepoker/2023/12/06/2023/20231206_%E4%BB%96%E8%80%85/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/thepoker/images/avatar.gif">
+      <meta itemprop="name" content="erain yin">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="thePoker">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/thepoker/2023/12/06/2023/20231206_%E4%BB%96%E8%80%85/" class="post-title-link" itemprop="url">他者 索拉里斯 最近</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-12-06 23:09:04" itemprop="dateCreated datePublished" datetime="2023-12-06T23:09:04+08:00">2023-12-06</time>
+            </span>
+              <span class="post-meta-item" style="display:none;">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-12-20 09:37:36" itemprop="dateModified" datetime="2023-12-20T09:37:36+08:00">2023-12-20</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/thepoker/categories/%E7%BA%A2%E6%A1%83-%E6%96%87%E7%AB%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">红桃 - 文章</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>近期所有关于自我的探索都引向一个主题：他者。仔细回想一下，种种不快和纠结，焦虑和矛盾，似乎都与外界的他者形成的矛盾有关。虽然仅仅来自于工作，但却影响着情绪、思维、生活。</p>
+<p>听一个关于《索拉里斯》的播客，却被灌了一碗科幻鸡汤。一个人们探索了很久的星球，越探索越被其展示的现象迷惑，之前的经验不堪一击，只能形成类似的薛定谔的猫一样的结论。观察的结果因观察者本身变化。索拉里斯能够将人类最深的欲望具像化，引诱并纠缠着观察者。</p>
+<p>最后的结论是什么呢？是他者。无论如何，你对他者的反应形成了今天的你，他者即是地狱，又是成就者。从这个角度来讲，人无论怎样，也都没有什么可抱怨的了。即使面对他者的阻碍，也应该放平心态。这样获得了平静，也获得了自我的提升。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://erainyin.github.io/thepoker/2023/08/30/2023/20230830-%E7%AE%A1%E5%87%BF%E5%98%9B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/thepoker/images/avatar.gif">
+      <meta itemprop="name" content="erain yin">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="thePoker">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/thepoker/2023/08/30/2023/20230830-%E7%AE%A1%E5%87%BF%E5%98%9B/" class="post-title-link" itemprop="url">管凿嘛</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-08-30 23:00:32" itemprop="dateCreated datePublished" datetime="2023-08-30T23:00:32+08:00">2023-08-30</time>
+            </span>
+              <span class="post-meta-item" style="display:none;">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-12-07 11:35:20" itemprop="dateModified" datetime="2023-12-07T11:35:20+08:00">2023-12-07</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/thepoker/categories/%E7%BA%A2%E6%A1%83-%E6%96%87%E7%AB%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">红桃 - 文章</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>天津话一学就会。应用场景丰富。</p>
+<p>暑假结束前最后一个周末，我们起了个大早。不为别的，就是赶着乘坐6点半发车的高铁，在7点来钟吃上一口芝麻酱打顶的嘎巴菜，一口碳水和油脂充分混合的卷圈儿，一口原教旨主义的煎饼，成为一个来自北京石景山区的精神老天津卫。</p>
+<p>领导在出行前就是一句话：你把票买好，行程安排好，别的我就不想操心了。为此我绞尽不多的脑汁，在各个搜索引擎中游走，终于在出行前定好了行程。买了早上6点半发车的高铁，晚上5点高铁返京。在这不长的几个小时里，要吃个像样的早点，走一走天津五大道，吹吹海河畔的风，领略一下意式风情街的风情，一言以蔽之，citywalk是也。</p>
+<p>7点04分火车抵达天津站，上了出租，师傅，西北角走着。西北角，西北角哪儿下？你们西北角嘛去？哦吃早点啊，师傅。知道了。周六清晨的路上车并不多。师傅，早上还不怎么堵车啊。师傅嘴一撇：介大礼拜六的堵嘛车！</p>
+<p>西北角是最近火起来的天津早点胜地，按理来说这种地方本地人都不屑一顾的地方。本来我计划随便找个地儿吃，但没有本地人带的话，随便找地儿无异于无头苍蝇乱撞。所以还是跟随社交平台的攻略，来到这里排队。幸好做了攻略，经过计算我们的胃的大小和美食单品的平均分量。最终我们采取少量多次的原则，原则上每种好吃的只买一件儿，以品尝为主。</p>
+<p>并没有一个叫做「西北角美食广场」，或者「西北角小吃街」的地方。西北角实际上就是这个路口的名字，下车后，旁边小区楼下就能看到很多排队的早点铺子。走了一圈后，我们锁定了一家比较综合的饭馆，一个是饭馆里面面积比较大，另外是这里主要售卖我们的目标小吃——嘎巴菜。我们点了一份嘎巴菜，一份羊老豆腐，又从旁边的档口买了一个卷圈。三者有一个共同点，就是都是我们没吃过的。</p>
+<p>嘎巴菜和我想象的不太一样，本来以为是又硬又脆的口感，结果是咸鲜软糯，牙口不好的老奶奶都能无障碍吞服。然后吃上一口炸的焦黄的卷圈儿，完美。再说一下卷圈儿，我觉得天津卫的老伙计们对美食的命名都有些谨小慎微，卷圈儿，对于没吃过的北京人，很容易联想到焦圈儿。焦圈儿，就是名副其实的一个炸焦了的面圈儿，太细了，太不禁嚼了。看看咱天津的卷圈儿，比老北京鸡肉卷都撼的一大卷给您炸了，外面还的包个大饼就着吃，太燥了。而且还有人一张大饼两个卷圈儿，对自己的嘴和胃那得是多有信心啊。话说回来卷圈儿因为里面包的是素菜，没有太特殊的味道，最大的感觉就是太油了，吃一口再来一口嘎巴菜，感觉更油了。最后说一下老豆腐，其实就是豆腐脑，但羊肉卤的老豆腐您吃过么？我是第一次吃。毕竟这里是回民馆儿，用羊肉做卤也不奇怪了。但豆腐脑上也给你浇上一勺芝麻酱可是有点意思。你可以看出天津人多喜欢吃芝麻酱了。这几样单品综合起来，热量爆棚，吃完了就想去喝点咖啡刮刮油。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://erainyin.github.io/thepoker/2023/08/07/2023/20230807-%E5%8C%97%E5%9D%9E%E5%85%AC%E5%9B%AD%E9%87%8E%E9%87%87/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/thepoker/images/avatar.gif">
+      <meta itemprop="name" content="erain yin">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="thePoker">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/thepoker/2023/08/07/2023/20230807-%E5%8C%97%E5%9D%9E%E5%85%AC%E5%9B%AD%E9%87%8E%E9%87%87/" class="post-title-link" itemprop="url">北坞公园野采</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-08-07 23:00:32" itemprop="dateCreated datePublished" datetime="2023-08-07T23:00:32+08:00">2023-08-07</time>
+            </span>
+              <span class="post-meta-item" style="display:none;">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-12-06 17:43:44" itemprop="dateModified" datetime="2023-12-06T17:43:44+08:00">2023-12-06</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/thepoker/categories/%E7%BA%A2%E6%A1%83-%E6%96%87%E7%AB%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">红桃 - 文章</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>本来计划前往园博园捞鱼。心心念念了小半个月，结果前几日北京一场大雨让永定河泄洪压力骤增。幸好我们有先见之明，提前打了个电话，得知园博园关门了，没有扑空。于是启用PlanB，前往北坞公园。</p>
+<p>北坞公园，号称拥有北平之秋的宝藏公园，如果在小红书上搜索相关关键词，你会发现这个拥有麦田、溪流和步道的免费城市郊野公园有多么火爆。但对于我们来说，今天它只是园博园的平替。和园博园毗邻的永定河相比，北坞公园至多能以玉泉山撑门面，最多说自己是与颐和园一衣带水的兄弟园林，然而三山五园里并没有它的名字。</p>
+<p>坞者，停船之处也。不过好就好在北坞还有水。我们就是冲着水去的。而且除了PlanB，我们还准备了PlanC，如果北坞公园不让进，那就直接小火车坐到植物园野采。于是拿上装备（捞鱼桶、椅子、鱼食）出发。</p>
+<p>大概下午一点我们抵达北坞公园，门口只有一个管停车的保安，从东南门进去后走不远就是一片湖水，游客不多，散落湖边，能看到几个钓鱼佬阵仗搞得老大。也就是说，钓鱼没人管。那我们捞鱼就更没人管了。找了个钓点，装鱼食，捞鱼神器下水。然后开始安装钓绳，准备开展另一项工作：钓青蛙。</p>
+<p>一个树枝，一段绳子，一块火腿肠。然后就是找青蛙了。钓青蛙的最重要的是要先看到青蛙。如果以钓鱼的思路那必须是钓个寂寞。在水塘边几经辗转，果然看到芦苇底下几只青蛙。于是慢慢伸过去绳子，让火腿肠假扮成虫子在青蛙眼前跳舞。不一会儿，青蛙果然被吸引，以看似笨拙实则敏捷的姿态抓住火腿肠，咬住，然后吐出绳子。逗了几个来回，实在好玩，但再往前探身要上网子抄时，它一蹬腿，扑通。水遁了。</p>
+<p>总结经验是，绳子不能太长，否则会打到上面的草。青蛙虽然机警，但在水里游会儿又会上岸，所以在原地蹲点不失是个好选择。但最重要的是，这个火腿肠对青蛙来说并不美味。没吃几口青蛙就连绳带肉吐了出来。看来还得上科技，下次整个带钩的鱼竿和蚯蚓，必定中🐸。</p>
+<p>最后说说鱼获，我第一桶下去捞上一条小鱼。青青一下午也仅斩获一条。但个头巨大，是近几次捕获最大的一条。但遗憾的是最后我们两个桶都损毁在了池塘里。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://erainyin.github.io/thepoker/2023/08/05/2023/20230805_%E7%A7%8D%E8%8D%89%E6%8B%94%E8%8D%89/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/thepoker/images/avatar.gif">
+      <meta itemprop="name" content="erain yin">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="thePoker">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/thepoker/2023/08/05/2023/20230805_%E7%A7%8D%E8%8D%89%E6%8B%94%E8%8D%89/" class="post-title-link" itemprop="url">种草拔草</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-08-05 23:09:04" itemprop="dateCreated datePublished" datetime="2023-08-05T23:09:04+08:00">2023-08-05</time>
+            </span>
+              <span class="post-meta-item" style="display:none;">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-12-20 09:44:19" itemprop="dateModified" datetime="2023-12-20T09:44:19+08:00">2023-12-20</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/thepoker/categories/%E7%BA%A2%E6%A1%83-%E6%96%87%E7%AB%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">红桃 - 文章</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>我儿时吃过几种非常美味的药。块状的板蓝根是其中之一。众所周知板蓝根是感冒发烧时的常用药，在当年非典时被奉为神药，虽然后来人们冷静下来说可能安慰剂成分更大些，但我们不能不对中国传统医学保持敬畏之心。我就是要说，板蓝根就是很好吃。</p>
+<p>而且我小时候还吃过一款方糖造型的板蓝根，其形质模拟巧克力，而且比普通的板蓝根冲剂更甜美，应该是配料里加了足量的红糖。众所周知，红糖也入药，一起吞服，没毛病。</p>
+<p>轻轻得知有这么一款好药后很羡慕我，但这毕竟是药。于是我给他推荐了另一款似药非药的好药——大山楂丸。大山楂丸是同仁堂出品的一款健胃消食的良药，以山楂为主料，辅以红糖，蜂蜜揉成一颗棕色大蜜丸。捧在手里分量压手，含在嘴里适口。和方块板蓝根、果味儿VC构成了童年药膳美味铁三角。</p>
+<p>听我说完青青一直以为是我编的，一直在问真的假的。为此我打开同仁堂网站，官网上一些知名良药里赫然有着发光的四个大字“大山楂丸”。您瞅瞅，黑纸白字，有，并且可喜的是，现在还有卖的。</p>
+<p>今天去中华民族园。门口有一个旅行团扎店的同仁堂药店。什么叫做来都来了，什么叫他还是个孩子，既然孩子来都来了，走过路过就不错过了。青青渴望得问道，妈妈我能去同仁堂里看一眼吗？当然可以。一问还真有，16元一盒。妈妈看到青青喜出望外的样子，还没让青青自己花钱买。</p>
+<p>晚饭之前，青青拿出一粒，惊呼，果然大！一口塞进嘴里，咀嚼良久，惊呼，真好吃。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://erainyin.github.io/thepoker/2023/08/03/2023/20230803-%E6%A4%8D%E7%89%A9%E5%9B%AD%E9%87%8E%E9%87%87/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/thepoker/images/avatar.gif">
+      <meta itemprop="name" content="erain yin">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="thePoker">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/thepoker/2023/08/03/2023/20230803-%E6%A4%8D%E7%89%A9%E5%9B%AD%E9%87%8E%E9%87%87/" class="post-title-link" itemprop="url">植物园野采</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-08-03 23:00:32" itemprop="dateCreated datePublished" datetime="2023-08-03T23:00:32+08:00">2023-08-03</time>
+            </span>
+              <span class="post-meta-item" style="display:none;">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-12-06 18:12:50" itemprop="dateModified" datetime="2023-12-06T18:12:50+08:00">2023-12-06</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/thepoker/categories/%E7%BA%A2%E6%A1%83-%E6%96%87%E7%AB%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">红桃 - 文章</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>北京大雨过后所有人都应对自然产生敬畏。大雨当天北京全境的公园都闭园了。即使几天后，植物园的樱桃沟景区也是不开放的。因为离山太近，据说香山上的积水还没流完，爬山大概率会变成溯溪。</p>
+<p>但我们还是前往了植物园。之前对于植物园我有个很高的评价，就是「没有选择的选择」。是拖底的，实在不知道去哪里的时候去植物园走走肯定没错。植物园有山，有水，有自然，有人文，关键还离家近。</p>
+<p>今天出来的时候已经到了下午，温度36度，湿度70%往上，体感温度超过了40度。虽然没有预报有雨，但天空被很厚重的云覆盖。这也就是湿度大的原因。我们的主要目标是想去抓几只蝗虫，最好是棉蝗。之前有在卧佛寺附近被我们称之为大王山的路段上抓到过巨大的螽斯（被我们亲切地称之为大王），这次也希望有所收获。植物园为了保护植物，整体上用了很多驱虫方法，所以能抓到的野生昆虫少了很多，不过上次还抓到了个体很大的很漂亮的白星花金龟，让人对这里还是抱有期待的。</p>
+<p>这次我们走了一条之前没有走过的路线，绕澄镜湖走过碧桃园的东侧。目前碧桃园正在重修，围起了好大一圈，等走过去之后，我们发现已经绕到了景区东北侧，不过离大王山不远了。这一程我们抓到了一只中华大刀螳，还有几只知了。此时天非常闷热，我的衣服几乎湿透，整个旅程伴随着巨大的蝉鸣。这一切的感觉简直不能再夏天了。</p>
+<p>就在快到大王山的时候，我们竟看到一只肥硕的野兔从树林间跳了出来，它似乎发现了我们，三下两下就蹦出去十来米，最终消失之前还回头看了看我们。这一切发生在短短的几秒钟之内。小萌看了惊呼，哇！那么大的兔子！我要捉一只！</p>
+<p>大王山名不虚传，看来我们的判断没错，虽然没有巨大棉蝗，也许时机还未到。但我们发现这里有非常多的剑角蝗，就是那种通体绿色，名字很嚣张，但实际笨笨的蝗虫。他们弹跳力不错，但不怎么飞，随便从草丛里踢一脚，就会蹦出好几只。然后轻轻松松就能网住好几只。最终我们把它带回家，顺路窄了点干草。几个大哥也不拘束，看见有草猛猛吃。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://erainyin.github.io/thepoker/2023/07/14/2023/20230714-%E5%A5%BD%E7%89%87/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/thepoker/images/avatar.gif">
+      <meta itemprop="name" content="erain yin">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="thePoker">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/thepoker/2023/07/14/2023/20230714-%E5%A5%BD%E7%89%87/" class="post-title-link" itemprop="url">好片</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-07-14 23:00:32 / 修改时间：22:57:31" itemprop="dateCreated datePublished" datetime="2023-07-14T23:00:32+08:00">2023-07-14</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/thepoker/categories/%E7%BA%A2%E6%A1%83-%E6%96%87%E7%AB%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">红桃 - 文章</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>《神之山岭》 Le sommet des dieux</p>
+<img src="/thepoker/images/2023/20230714-1.png" class="postimg" title="剧照 " alt="剧照"> 
+<!-- ![练习](https://s1.ax1x.com/2023/04/10/ppq7RHg.jpg) -->
+
+<img src="/thepoker/images/2023/20230714-2.png" class="postimg" title="剧照 " alt="剧照"> 
+<!-- ![练习](https://s1.ax1x.com/2023/04/10/ppq7RHg.jpg) -->
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+  </div>
+
+  
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/thepoker/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/thepoker/page/91/">91</a><a class="extend next" rel="next" href="/thepoker/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">erain yin</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/thepoker/archives/">
+        
+          <span class="site-state-item-count">906</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/thepoker/categories/">
+          
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/thepoker/tags/">
+          
+        <span class="site-state-item-count">130</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">erain yin</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/thepoker/lib/anime.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <script src="/thepoker/lib/velocity/velocity.min.js"></script>
+  <script src="/thepoker/lib/velocity/velocity.ui.min.js"></script>
+<script src="/thepoker/js/utils.js"></script><script src="/thepoker/js/motion.js"></script>
+<script src="/thepoker/js/schemes/muse.js"></script>
+<script src="/thepoker/js/next-boot.js"></script>
+
+
+
+  
+
+
+
+
+  <script src="/thepoker/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
