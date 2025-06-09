@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/thepoker/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/thepoker/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/thepoker/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/thepoker/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/thepoker/css/main.css">
+
+
+<link rel="stylesheet" href="/thepoker/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('https://erainyin.github.io/thepoker').hostname,
+    root: '/thepoker/',
+    scheme: 'Mist',
+    version: '7.6.0',
+    exturl: false,
+    sidebar: {"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: true,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="thePoker">
+<meta property="og:url" content="https://erainyin.github.io/thepoker/index.html">
+<meta property="og:site_name" content="thePoker">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="erain yin">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://erainyin.github.io/thepoker/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: true,
+    isPost: false
+  };
+</script>
+
+  <title>thePoker</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/thepoker/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">thePoker</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">blog of erain</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/thepoker/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/thepoker/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/thepoker/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/thepoker/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://erainyin.github.io/thepoker/2025/06/02/2025/20250602_%E6%95%85%E5%AE%AB%E5%85%AB%E5%88%86%E4%B9%8B%E4%B8%89/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/thepoker/images/avatar.gif">
+      <meta itemprop="name" content="erain yin">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="thePoker">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/thepoker/2025/06/02/2025/20250602_%E6%95%85%E5%AE%AB%E5%85%AB%E5%88%86%E4%B9%8B%E4%B8%89/" class="post-title-link" itemprop="url">故宫八分之三</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-06-02 23:09:04" itemprop="dateCreated datePublished" datetime="2025-06-02T23:09:04+08:00">2025-06-02</time>
+            </span>
+              <span class="post-meta-item" style="display:none;">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-06-06 11:12:22" itemprop="dateModified" datetime="2025-06-06T11:12:22+08:00">2025-06-06</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/thepoker/categories/%E7%BA%A2%E6%A1%83/" itemprop="url" rel="index">
+                    <span itemprop="name">红桃</span>
+                  </a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/thepoker/categories/%E7%BA%A2%E6%A1%83/%E6%96%87%E7%AB%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">文章</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <!-- <img src="/thepoker/images/2025/20250426_01.jpg" class="postimg" title="🇬🇷百看不厌 " alt="🇬🇷百看不厌"> -->
+
+<p><img src="https://s21.ax1x.com/2025/04/29/pEHQsQH.jpg" alt="🇬🇷百看不厌"></p>
+<p>端午节最后一天，出发前往故宫，天气晴，早晨略有风。天空湛蓝，有大朵的云，像漫画一样。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://erainyin.github.io/thepoker/2025/05/29/2025/20250529_%E7%BB%86%E8%8A%82/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/thepoker/images/avatar.gif">
+      <meta itemprop="name" content="erain yin">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="thePoker">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/thepoker/2025/05/29/2025/20250529_%E7%BB%86%E8%8A%82/" class="post-title-link" itemprop="url">细节</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-05-29 23:09:04" itemprop="dateCreated datePublished" datetime="2025-05-29T23:09:04+08:00">2025-05-29</time>
+            </span>
+              <span class="post-meta-item" style="display:none;">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-06-06 10:51:00" itemprop="dateModified" datetime="2025-06-06T10:51:00+08:00">2025-06-06</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/thepoker/categories/%E7%BA%A2%E6%A1%83/" itemprop="url" rel="index">
+                    <span itemprop="name">红桃</span>
+                  </a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/thepoker/categories/%E7%BA%A2%E6%A1%83/%E6%96%87%E7%AB%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">文章</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>忙碌使人疲惫，涣散，丧失理性。</p>
+<p>藿香正气水是中式梦核的野格。</p>
+<p>从梦中醒来，听到晨鸟的叫声，粗粝，广阔</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://erainyin.github.io/thepoker/2025/05/09/2025/20250509_%E5%8D%B0%E8%B1%A1%E6%A8%A1%E7%B3%8A%E7%9A%84%E5%B9%B4%E4%BB%A3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/thepoker/images/avatar.gif">
+      <meta itemprop="name" content="erain yin">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="thePoker">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/thepoker/2025/05/09/2025/20250509_%E5%8D%B0%E8%B1%A1%E6%A8%A1%E7%B3%8A%E7%9A%84%E5%B9%B4%E4%BB%A3/" class="post-title-link" itemprop="url">印象模糊的年代</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-05-09 23:09:04" itemprop="dateCreated datePublished" datetime="2025-05-09T23:09:04+08:00">2025-05-09</time>
+            </span>
+              <span class="post-meta-item" style="display:none;">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-06-06 10:50:00" itemprop="dateModified" datetime="2025-06-06T10:50:00+08:00">2025-06-06</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/thepoker/categories/%E7%BA%A2%E6%A1%83/" itemprop="url" rel="index">
+                    <span itemprop="name">红桃</span>
+                  </a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/thepoker/categories/%E7%BA%A2%E6%A1%83/%E6%96%87%E7%AB%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">文章</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>我愿称当下为印象模糊的年代。因为一个人走，或者一个人来，都留不下太长的印象，甚至在工作这种容易维持人际关系的环境里，人也被拆散，隔离，难以沟通，无论是开始还是结束，都变得模糊不堪。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://erainyin.github.io/thepoker/2025/05/05/2025/20250505_%E9%97%A8%E7%A5%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/thepoker/images/avatar.gif">
+      <meta itemprop="name" content="erain yin">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="thePoker">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/thepoker/2025/05/05/2025/20250505_%E9%97%A8%E7%A5%A8/" class="post-title-link" itemprop="url">门票</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-05-05 23:09:04" itemprop="dateCreated datePublished" datetime="2025-05-05T23:09:04+08:00">2025-05-05</time>
+            </span>
+              <span class="post-meta-item" style="display:none;">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-06-06 10:50:00" itemprop="dateModified" datetime="2025-06-06T10:50:00+08:00">2025-06-06</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/thepoker/categories/%E7%BA%A2%E6%A1%83/" itemprop="url" rel="index">
+                    <span itemprop="name">红桃</span>
+                  </a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/thepoker/categories/%E7%BA%A2%E6%A1%83/%E6%96%87%E7%AB%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">文章</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>下一站：卡拉马佐夫兄弟。</p>
+<p>《被侮辱的与被损害的》是我在年初重新翻开的一本大部头。虽说不如陀思妥耶夫斯基的《罪与罚》或者《地下室手记》有名，但这本书被蒋勋提起过——这大概是我买书的一个缘起。而这本书我初读的时候感觉难以进入。那大概是几年前，或者十几年前。而在去年，我忽然感觉，或许冥冥之中有个声音告诉我，时机成熟了。就像忽然拥有了某种能力，我获得了静下心来开始重读这本小说的勇气与心境。或许是外部环境的嘈杂和令人不安，我在最近的两年年初都会拿起笔在纸上乱画，或者翻开某些旧书，重读《你一生的故事》或者《趁生命气息逗留》。而当那些虚幻的描写不再能令我稳定的时候，我想到了陀思妥耶夫斯基，看到书架上这本红色硬皮的名著，这本书旁边还有一本同一个出版社的《魔山》，二者相比，我选择了字数更少一些的《被侮辱的与被损害的》，三个月来，终于读完了。</p>
+<p>维特根斯坦告诉我，地狱的恐怖一天之内就可以看到，这点时间足够了。而陀思妥耶夫斯基做的，就是让你用几个月的时间，了解十九世纪他生活的年代之间人间的地狱景象，而那些他笔下人的不幸和幸运，在百年后的今天，万里以外的中国，你会发现，并无不同。</p>
+<p>读完这本，我算不算拿到了一张通往下一部陀爷的名著的门票？</p>
+<p>这本书开始读的时候感觉非常艰难，人名长且变化，就像中文小说中一个人有名有字，有小名，有外号。而俄语人名和他们的小名或昵称差异很大，形成一种阅读障碍。但当你慢慢进入故事，搞清楚了里面的人物关系，其实我发现这部小说的人物并不多，每个出场人物都很重要，没有废笔。到后来，我甚至给这几个角色自创了名字，比如“公爵”“公爵的傻儿子”“村姑”“文人”“老农民”等等。这么一代入，大大加快了我的阅读速度。甚至最后几十页我居然是在一个下午读完的。也就是说，我，读进去了。</p>
+<p>读到最后令我非常佩服陀爷，文中一个重要角色和大反派之间的纠葛我读到 2/3 的时候就猜到了，一直想读到陀爷揭开谜底的描写，结果，这个好奇感一直保持到了最后两页，这个重要角色都去世了，才被作者娓娓道来。故事情节和读者的内心都被作者拿捏了。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://erainyin.github.io/thepoker/2025/04/27/2025/20250427_%E6%95%85%E5%AE%AB%E5%85%AB%E5%88%86%E4%B9%8B%E4%BA%8C/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/thepoker/images/avatar.gif">
+      <meta itemprop="name" content="erain yin">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="thePoker">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/thepoker/2025/04/27/2025/20250427_%E6%95%85%E5%AE%AB%E5%85%AB%E5%88%86%E4%B9%8B%E4%BA%8C/" class="post-title-link" itemprop="url">故宫八分之二</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-04-27 23:09:04" itemprop="dateCreated datePublished" datetime="2025-04-27T23:09:04+08:00">2025-04-27</time>
+            </span>
+              <span class="post-meta-item" style="display:none;">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-06-06 10:50:00" itemprop="dateModified" datetime="2025-06-06T10:50:00+08:00">2025-06-06</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/thepoker/categories/%E7%BA%A2%E6%A1%83/" itemprop="url" rel="index">
+                    <span itemprop="name">红桃</span>
+                  </a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/thepoker/categories/%E7%BA%A2%E6%A1%83/%E6%96%87%E7%AB%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">文章</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <!-- <img src="/thepoker/images/2025/20250426_01.jpg" class="postimg" title="🇬🇷百看不厌 " alt="🇬🇷百看不厌"> -->
+
+<p><img src="https://s21.ax1x.com/2025/04/29/pEHQsQH.jpg" alt="🇬🇷百看不厌"></p>
+<p>去故宫的前一天，青青练习下棋输了，在沙发上发脾气，哀嚎“我要复盘，我要复盘”，妈妈一赌气先睡了，青青耗到了 11 点才睡。我因为工作熬到 11 点半。总算弄完了手上的活。要不是跟二毛一家约好第二天要去故宫，要不是因为五一调休周日上班，这周只有一天休息，要不是因为下周放假青青要打两天比赛，明天无论如何是要出去活动的。（否则我感觉很可能妈妈一怒之下让明天变成再练一天棋的日子）</p>
+<!-- <img src="/thepoker/images/2025/20250426_02.jpg" class="postimg" title="令人神往 " alt="令人神往"> -->
+
+<p><img src="https://s21.ax1x.com/2025/04/29/pEHQrSe.jpg" alt="🇬🇷令人神往"></p>
+<p>今天去故宫，除了散步，还因为故宫有一个名为代达罗斯的展览。夫代达罗斯者，希腊人伊卡洛斯之父也。就是在米诺斯时代修建了城堡并被困其中，城堡地下有个迷宫，迷宫里有个牛首人身的怪物，名字就叫米克诺斯。代达罗斯为了逃出城堡，用鸟的羽毛和蜡做了翅膀给儿子装上。后来伊卡洛斯陶醉于自由的飞翔，太靠近太阳导致翅膀的蜡融化，坠入大海。所以这个展是以希腊米诺斯文明为主题的展览，看介绍和海报很吸引人。于是我们约上二毛一家一起前往。</p>
+<p>今天天气很好。我的意思是，真的很好。前两天的雨将温度控制在了 25 度左右，一波沙尘过后，天空变成了蓝色。并且没有一丝云。阳光可以倾泻而下，但寰宇之间有微风。风吹过来，到脸上仍保留一丝凉意。爽朗与温存同时存在。</p>
+<p>我们乘坐地铁，天安门西下车走中山公园，这样能减少天安门广场安检的长时间等待。不过打错了算盘，中山公园居然票价涨到了 10 元一张，也是，都这样的好光景了，门票改成了旺季价格，多花几元也值得。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://erainyin.github.io/thepoker/2025/04/22/2025/20250422_%E7%BB%86%E8%8A%82/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/thepoker/images/avatar.gif">
+      <meta itemprop="name" content="erain yin">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="thePoker">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/thepoker/2025/04/22/2025/20250422_%E7%BB%86%E8%8A%82/" class="post-title-link" itemprop="url">细节</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-04-22 23:09:04" itemprop="dateCreated datePublished" datetime="2025-04-22T23:09:04+08:00">2025-04-22</time>
+            </span>
+              <span class="post-meta-item" style="display:none;">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-04-28 15:45:26" itemprop="dateModified" datetime="2025-04-28T15:45:26+08:00">2025-04-28</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/thepoker/categories/%E7%BA%A2%E6%A1%83/" itemprop="url" rel="index">
+                    <span itemprop="name">红桃</span>
+                  </a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/thepoker/categories/%E7%BA%A2%E6%A1%83/%E6%96%87%E7%AB%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">文章</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>晚上睡觉之前青青躺在床上不让我走。</p>
+<p>“爸爸，别走，再陪我一会儿，我睡不着。”<br>“快睡吧”我说，“我还得工作一会儿。”<br>“爸爸你怎么总有工作？”<br>“我今天晚上加班做的是明天的工作，然后明天就能早点回家陪你了。”<br>“那爸爸你以后如果每天都提前做明天的工作，是不是等你退休的那一天，你就能提前一天做完所有工作了？那可太棒了。”</p>
+<p>哈哈，谢谢你提醒我。</p>
+<hr>
+<p>最近青青不管陪他睡觉的毛绒玩具小驴叫小驴，而叫“小马狗”。之前也不叫小驴，叫“小卢”。</p>
+<hr>
+<p>最近看了几个电影《Mickey 17》（米奇17）一个未来克隆人反乌托邦的科幻片，挺有意思。主演是暮光之城的男主角。《Last Breath》（一息尚存）讲的是潜水员在海底作业的时候遇险，最后无氧40分钟被人救上来，奇迹般生还的故事。很精彩。而且是皆大欢喜的结局，故事还是真实事件改编。不由得让人感叹大自然的可怕，和生命的不可思议。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://erainyin.github.io/thepoker/2025/04/03/2025/20250403_%E6%98%A5%E6%97%A5%E5%B0%8F%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/thepoker/images/avatar.gif">
+      <meta itemprop="name" content="erain yin">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="thePoker">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/thepoker/2025/04/03/2025/20250403_%E6%98%A5%E6%97%A5%E5%B0%8F%E8%AE%B0/" class="post-title-link" itemprop="url">春日小记</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-04-03 23:09:04" itemprop="dateCreated datePublished" datetime="2025-04-03T23:09:04+08:00">2025-04-03</time>
+            </span>
+              <span class="post-meta-item" style="display:none;">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-06-06 10:50:00" itemprop="dateModified" datetime="2025-06-06T10:50:00+08:00">2025-06-06</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/thepoker/categories/%E7%BA%A2%E6%A1%83/" itemprop="url" rel="index">
+                    <span itemprop="name">红桃</span>
+                  </a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/thepoker/categories/%E7%BA%A2%E6%A1%83/%E6%96%87%E7%AB%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">文章</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>“请赞美春天，拜托了！”</p>
+<img src="/thepoker/images/2025/20250403_01.jpg" class="postimg" title="最好的绿植 " alt="最好的绿植">
+
+<!-- ![最好的绿植](https://s21.ax1x.com/2025/05/01/pEH7bKP.jpg) -->
+
+<p>最好的绿植就是蔬菜，四月，最低气温终于到了零上十度，两个月前播种的罗勒和小白菜都长出了叶子。甚至需要高温才能出芽的辣椒也破土而出。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://erainyin.github.io/thepoker/2025/04/02/2025/20250402_%E5%9B%9B%E6%9C%88%E7%9A%84%E5%A4%9C%E6%99%9A%E5%B1%9E%E4%BA%8E%E4%B8%81%E9%A6%99%E8%8A%B1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/thepoker/images/avatar.gif">
+      <meta itemprop="name" content="erain yin">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="thePoker">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/thepoker/2025/04/02/2025/20250402_%E5%9B%9B%E6%9C%88%E7%9A%84%E5%A4%9C%E6%99%9A%E5%B1%9E%E4%BA%8E%E4%B8%81%E9%A6%99%E8%8A%B1/" class="post-title-link" itemprop="url">四月的夜晚属于丁香花</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-04-02 23:09:04" itemprop="dateCreated datePublished" datetime="2025-04-02T23:09:04+08:00">2025-04-02</time>
+            </span>
+              <span class="post-meta-item" style="display:none;">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-04-28 15:15:25" itemprop="dateModified" datetime="2025-04-28T15:15:25+08:00">2025-04-28</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/thepoker/categories/%E7%BA%A2%E6%A1%83/" itemprop="url" rel="index">
+                    <span itemprop="name">红桃</span>
+                  </a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/thepoker/categories/%E7%BA%A2%E6%A1%83/%E6%96%87%E7%AB%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">文章</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>四月的夜晚属于丁香花<br>不止于夜晚<br>不止于此处<br>风是我和花的朋友<br>将颜色化为味道<br>牵成线<br>化做网<br>弥漫空间和时间</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://erainyin.github.io/thepoker/2025/03/20/2025/20250320_%E9%98%B3%E5%85%89%E7%8B%82%E9%A3%8E%E7%BA%B8%E5%B7%BE%E4%B8%8E%E7%BA%A2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/thepoker/images/avatar.gif">
+      <meta itemprop="name" content="erain yin">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="thePoker">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/thepoker/2025/03/20/2025/20250320_%E9%98%B3%E5%85%89%E7%8B%82%E9%A3%8E%E7%BA%B8%E5%B7%BE%E4%B8%8E%E7%BA%A2/" class="post-title-link" itemprop="url">阳光狂风纸巾与红</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-03-20 23:09:04" itemprop="dateCreated datePublished" datetime="2025-03-20T23:09:04+08:00">2025-03-20</time>
+            </span>
+              <span class="post-meta-item" style="display:none;">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-04-28 15:15:25" itemprop="dateModified" datetime="2025-04-28T15:15:25+08:00">2025-04-28</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/thepoker/categories/%E7%BA%A2%E6%A1%83/" itemprop="url" rel="index">
+                    <span itemprop="name">红桃</span>
+                  </a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/thepoker/categories/%E7%BA%A2%E6%A1%83/%E6%96%87%E7%AB%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">文章</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>La rouge du soleil et du vent et les feuilles de papillon.</p>
+<p>炙热的阳光，温度飙升至25摄氏度以上，这是三月的一天，寻常的三月，不寻常的天气。刚刚度过的半个月里，北京的温度上升了将近20度。寒冷的空气被阳光一扫而空，取而代之的是来自的东南部的暖风。惊蛰之后，植物萌发，城市的绿化带的植物们渐渐苏醒，绿色的嫩叶开始从干枯了整个冬天的枝条上长出。而对于那些常绿树木，这样温暖的天气给到他们一个信号：恋爱的季节到了。</p>
+<p>于是北京被广泛种植的圆柏树开始出现大量花粉。有趣的事情是，对于柏树这样的裸子植物，并没有传统意义上的花，没有花瓣包裹中间花蕊上那样的花粉。从冰河时代活到现在的植物，自然有他的本领。他们的花粉像一个个黄色的炮弹挂在叶子的边缘，只要风吹过，他们就像黄雾一样散开，在空中飘飞。</p>
+<p>尽管他们的目的并不是我的鼻子，而是不知道哪里有的雌性圆柏。但我接受到了他们，对于我和圆柏，这都是意外，都是上天的安排，他们没能和雌树结合变成能够繁衍后代的种子。我也没想因为吸入这种看不见的颗粒导致涕泪横流，双眼红肿。</p>
+<p>即使今年我提早吃上了抗过敏药，但还是在某个午后，双眼痛痒难耐，一番揉搓之后，眼睛布满血丝，鼻涕一样的分泌物像一层膜一样覆盖了整个眼球——不擦净他们，仿佛在水中视物模模糊糊，擦看他们，眼球又干痒难耐。同时伴随着鼻涕、眼泪以及嗓子发炎。</p>
+<p>这个情况下，能让我还保留一点体面的，就只能靠手纸不断擦拭了。</p>
+<p>虽然我没有去医院确诊过，但是，就看症状我已经能给自己确诊了，过敏性鼻炎+过敏性结膜炎。虽然我分不清结膜和角膜有什么区别，但管他呢，反正就是过敏导致的双眼红肿和鼻子不通气，我能感受到鼻腔内充斥着炎症那样的分泌物——人体中最不可思议的产出物之一。它们在固体和液体之间，将头颅中的空隙堵住，流到哪里就让哪里不舒服，眼睛、鼻子，甚至嗓子。我吃了不少药，从氯雷他定，到盐酸什么什么，从鼻炎药到眼药水。总之，穷尽一切方法，病急乱投医。只是让自己能尽量好受一些。</p>
+<p>三月，红色属于眼角。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://erainyin.github.io/thepoker/2025/03/13/2025/20250313_%E9%87%8D%E8%AF%BB%E9%99%80%E7%88%B7/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/thepoker/images/avatar.gif">
+      <meta itemprop="name" content="erain yin">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="thePoker">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/thepoker/2025/03/13/2025/20250313_%E9%87%8D%E8%AF%BB%E9%99%80%E7%88%B7/" class="post-title-link" itemprop="url">重读陀爷</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-03-13 23:09:04" itemprop="dateCreated datePublished" datetime="2025-03-13T23:09:04+08:00">2025-03-13</time>
+            </span>
+              <span class="post-meta-item" style="display:none;">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-04-28 15:15:25" itemprop="dateModified" datetime="2025-04-28T15:15:25+08:00">2025-04-28</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/thepoker/categories/%E7%BA%A2%E6%A1%83/" itemprop="url" rel="index">
+                    <span itemprop="name">红桃</span>
+                  </a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/thepoker/categories/%E7%BA%A2%E6%A1%83/%E6%96%87%E7%AB%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">文章</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>“爸爸，你为什么要读……”青青指着我手里的硬皮名著，“被侮辱的与被损害的全译本？”</p>
+<p>“全译本并不是这书名的一部分……”</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+  </div>
+
+  
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/thepoker/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/thepoker/page/98/">98</a><a class="extend next" rel="next" href="/thepoker/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">erain yin</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/thepoker/archives/">
+        
+          <span class="site-state-item-count">976</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/thepoker/categories/">
+          
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/thepoker/tags/">
+          
+        <span class="site-state-item-count">130</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">erain yin</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/thepoker/lib/anime.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <script src="/thepoker/lib/velocity/velocity.min.js"></script>
+  <script src="/thepoker/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/thepoker/js/utils.js"></script>
+
+<script src="/thepoker/js/motion.js"></script>
+
+
+<script src="/thepoker/js/schemes/muse.js"></script>
+
+
+<script src="/thepoker/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/thepoker/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
