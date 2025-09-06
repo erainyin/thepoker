@@ -202,6 +202,134 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://erainyin.github.io/thepoker/2019/11/05/2019/20191105_%E7%9C%9F%E6%98%AF%E6%8A%98%E8%85%BE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/thepoker/images/avatar.gif">
+      <meta itemprop="name" content="erain yin">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="thePoker">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/thepoker/2019/11/05/2019/20191105_%E7%9C%9F%E6%98%AF%E6%8A%98%E8%85%BE/" class="post-title-link" itemprop="url">真是折腾</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-11-05 18:00:32" itemprop="dateCreated datePublished" datetime="2019-11-05T18:00:32+08:00">2019-11-05</time>
+            </span>
+              <span class="post-meta-item" style="display:none;">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-01-27 09:57:06" itemprop="dateModified" datetime="2022-01-27T09:57:06+08:00">2022-01-27</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/thepoker/categories/%E7%BA%A2%E6%A1%83-%E6%96%87%E7%AB%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">红桃 - 文章</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>这两天一直在折腾博客。总算差不多搞清楚了git到底怎么用，以及满足我不同电脑间同步博客的需求。找了一堆教程，来来回回弄了很久。现在算是有点眉目了。按照教程把博客在git分支上备份了。</p>
+<p>以后主要就是要注意换电脑更新之前要更新本地代码了。  </p>
+<p><strong>更新了1108</strong></p>
+<p>成功了，成功了，老父亲流下了激动的泪水。<br>最后还踩了个坑，幸亏看了这篇《<a href="https://www.cnblogs.com/tenny-peng/p/11543279.html" target="_blank" rel="noopener">多台电脑hexo部署到github的坑</a>》</p>
+<p><strong>更新1107</strong></p>
+<p>尝试了重新建立私有库，取消原来原来库的分支，这个和我最早的做法一样。</p>
+<p><strong>更新1106</strong></p>
+<p>我佛了。昨晚回家折腾了半天发现还是没弄好。崩溃。</p>
+<p>后来又看了半天教程，估计问题是出现在另一台电脑clone的时候。</p>
+<p><strong>可能正确的方式：</strong>对于本地电脑，如果是第一次使用，则输入：</p>
+<pre><code>git clone -b &lt;分支&gt; &lt;server&gt; &lt;待存放路径&gt; //&lt;server&gt; 是指在线仓库的地址
+cd &lt;待存放路径&gt;
+npm install</code></pre><p>不过据说，据说还有一个更简单的方法，就是把博客文件拷到U盘里，这样就实现在各个电脑上同步了😂。</p>
+<ul>
+<li>如何用hexo加github pages搭建博客<ul>
+<li>《<a href="https://www.jianshu.com/p/eded1dd2d794" target="_blank" rel="noopener">如何搭建个人博客 ？Hexo + GitHub 是一个不错的选择</a>》</li>
+<li>《<a href="https://www.jianshu.com/p/17d55d420d94" target="_blank" rel="noopener">hexo的目录结构</a>》</li>
+</ul>
+</li>
+<li>如何在多台电脑上同步更新hexo博客<ul>
+<li>《<a href="https://www.jianshu.com/p/0b1fccce74e0" target="_blank" rel="noopener">利用Hexo在多台电脑上提交和更新github pages博客</a>》</li>
+<li>《<a href="https://blog.csdn.net/nightmare_dimple/article/details/86661514" target="_blank" rel="noopener">利用Hexo在多台电脑上提交和更新博客</a>》</li>
+<li>《<a href="https://segmentfault.com/a/1190000017784822?utm_source=tag-newest" target="_blank" rel="noopener">最安全的hexo多台电脑同步博客解决方案–非新建分支</a>》这个文章其实是对下面这篇原文的补充：</li>
+<li>《<a href="https://ricky.moe/2017/01/13/hexo-perfect-synchronize/" target="_blank" rel="noopener">最完美的Hexo多电脑同步方法</a>》</li>
+</ul>
+</li>
+</ul>
+<p><strong>踩坑记录</strong></p>
+<ul>
+<li>远端库<ul>
+<li>创建库</li>
+<li>开通pages服务</li>
+<li>创建SSH key</li>
+<li>添加SSH Key</li>
+</ul>
+</li>
+<li>查看本地环境<ul>
+<li>看是否有git</li>
+<li>看是否有npm</li>
+<li>看是否有node</li>
+</ul>
+</li>
+<li>安装hexo</li>
+<li>初始化博客<ul>
+<li>本地初始化 hexo init</li>
+<li>生成 hexo g</li>
+<li>本地服务区测试 hexo s</li>
+<li>清除生成 hexo clean</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>补充20200423 一个知乎的问题《<a href="https://www.zhihu.com/question/21193762" target="_blank" rel="noopener">使用hexo，如果换了电脑怎么更新博客？</a>》</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://erainyin.github.io/thepoker/2019/11/03/2019/20191103_%E5%A4%A7%E6%B0%B4%E8%8A%B1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -906,73 +1034,6 @@
   
   
 
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://erainyin.github.io/thepoker/2019/08/07/2019/20190807_%E7%94%BB%E5%B0%8F%E7%8C%B4%E7%94%BB%E7%94%BB/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/thepoker/images/avatar.gif">
-      <meta itemprop="name" content="erain yin">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="thePoker">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/thepoker/2019/08/07/2019/20190807_%E7%94%BB%E5%B0%8F%E7%8C%B4%E7%94%BB%E7%94%BB/" class="post-title-link" itemprop="url">画小猴画画</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-08-07 10:32:32" itemprop="dateCreated datePublished" datetime="2019-08-07T10:32:32+08:00">2019-08-07</time>
-            </span>
-              <span class="post-meta-item" style="display:none;">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-01-27 09:57:06" itemprop="dateModified" datetime="2022-01-27T09:57:06+08:00">2022-01-27</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <!-- <img src="/thepoker/images/illustration_qingqing_draw_01.jpg" class="postimg" title="画小猴画画 " alt="画小猴画画"> -->
-
-<p><img src="https://s2.ax1x.com/2020/02/28/3Bt8iD.jpg" alt="画小猴画画"></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
   </div>
 
   
@@ -1043,7 +1104,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/thepoker/archives/">
         
-          <span class="site-state-item-count">982</span>
+          <span class="site-state-item-count">983</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
