@@ -222,15 +222,20 @@ NexT.utils = {
       var link = element.querySelector('a.nav-link');
       // TOC item animation navigate.
       link.addEventListener('click', event => {
-        event.preventDefault();
-        var target = document.getElementById(event.currentTarget.getAttribute('href').replace('#', ''));
-        var offset = target.getBoundingClientRect().top + window.scrollY;
-        window.anime({
-          targets  : document.scrollingElement,
-          duration : 500,
-          easing   : 'linear',
-          scrollTop: offset + 10
-        });
+        var targetId = event.currentTarget.getAttribute('href').replace('#', '');
+        var target = document.getElementById(targetId);
+        
+        if (target) {
+          event.preventDefault();
+          var offset = target.getBoundingClientRect().top + window.scrollY;
+          window.anime({
+            targets  : document.scrollingElement,
+            duration : 500,
+            easing   : 'linear',
+            scrollTop: offset + 10
+          });
+        }
+        // 如果 target 不存在，使用默认的锚点跳转行为
       });
       return document.getElementById(link.getAttribute('href').replace('#', ''));
     });
